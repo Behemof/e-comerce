@@ -6,9 +6,9 @@ function App() {
 
   return (
     <div>
+      <h>Hola mundo</h>
 
 
-      
     </div>
   )
 }
