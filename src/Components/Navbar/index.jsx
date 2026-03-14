@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { ContextoGlobal } from "../../Context";
+import { useContext} from "react";
 
 function Navbar (){
+    const context = useContext(ContextoGlobal)
 
     const activeStyle = "underline underline-offset-4"
 
@@ -73,6 +77,12 @@ function Navbar (){
                     <NavLink to="/sing-in" className={({isActive}) => isActive ? activeStyle : undefined}>
                         Sign In
                     </NavLink>
+                </li>
+
+                <li>
+                    <div>
+                     {context.count}🛒 
+                    </div>
                 </li>
 
             

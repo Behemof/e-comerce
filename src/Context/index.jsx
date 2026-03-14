@@ -4,6 +4,7 @@ export const ContextoGlobal = createContext();
 
 export function ContextoGlobalProveedor ({children}){
     const [count, setCount] = useState(0)
+    
 
     return (
         <ContextoGlobal.Provider value={{ count, setCount}}> 
