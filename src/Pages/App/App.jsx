@@ -1,4 +1,5 @@
 import { useRoutes,BrowserRouter } from 'react-router-dom'
+import { ContextoGlobalProveedor } from '../../Context'
 import Home from '../Home'
 import MyAccount from '../MyAccount'
 import MyOrder from '../MyOrder'
@@ -27,10 +28,12 @@ function App() {
  
 
   return (
+    <ContextoGlobalProveedor> 
     <BrowserRouter>
       <AppRutas/>
       <Navbar/>
     </BrowserRouter>
+    </ContextoGlobalProveedor>
   )
 }
 
